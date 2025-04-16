@@ -147,11 +147,10 @@ h1, h2, h3, h4, h5, h6{
     margin-top: 240px;
 }
 .title{
-    margin-bottom: 30px;
     text-align: center;
 }
 .title p{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     font-family: var(--sec-font);
     margin-top: 15px;
     font-size: 20px;
@@ -304,10 +303,10 @@ nav{
     color: var(--white);
     font-family: var(--sec-font);
     font-size: 16px;
-    display: block;
+    display: flex;
     font-weight: 800;
     letter-spacing: 1px;
-    padding: 15px 30px;
+    padding: 15px 35px;
     border-radius: 30px;
     background-color: var(--primary-color);
     text-align: center;
@@ -315,7 +314,10 @@ nav{
     position: relative;
     z-index: 1;
     overflow: hidden;
-    margin-left: 5px;
+}
+.btn span{
+    margin-left: auto;
+    margin-right: auto;
 }
 .btn i{
     margin-left: 5px;
@@ -386,4 +388,420 @@ nav{
 }
 .dropdown-menu li:hover{
     background-color: rgba(var(--primary-color-rgb), 0.5);
+}
+
+/* ================================ home layout-1 =========================== */
+/* ======= hero ======= */
+
+.hero{
+    width: 100%;
+    min-height: 200px;
+    /* background: url(../images/gradient/Gradient.png); */
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    z-index: -1;
+    overflow: hidden;
+    padding-top: 20px;
+    /* position: absolute; */
+}
+.hero::before{
+    content: '';
+    width: 100%;
+    min-height: 700px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: url(../images/gradient/Gradient.png);
+    background-size: cover;
+    background-position: center;
+}
+.hero-pd{
+    padding-top: 70px;
+}
+.hero .title h2, .hero .title span, .offer .title h2{
+    font-size: 90px;
+}
+.text-side{
+    width: 100%;
+    height: 100%;
+    padding: 50px 0px;
+    padding-left: 40px;
+    z-index: 1;
+}
+.line{
+    width: 50px;
+    height: 5px;
+    background-color: var(--black);
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.text-side > span{
+    font-size: 30px;
+    line-height: 50px;
+    margin-left: 10px;
+    font-family: var(--pri-font);
+}
+.text-side p{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-family: var(--sec-font);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.text-side .btn{
+    width: 300px;
+    font-size: 14px;
+    background-color: var(--secondary-color);
+    z-index: 1;
+    margin-left: 15px;
+}
+.text-side .btn:hover{
+    box-shadow: 0px 0px 10px var(--primary-color);
+}
+.text-side .btn::before, .text-side .btn::after{
+    background-color: var(--primary-color);
+    width: 180px;
+}
+.banner-img{
+    width: 100%;
+    min-height: 400px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+}
+.banner-img img{
+    width: 500px;
+    height: 580px;
+    object-fit: cover;
+    z-index: 1;
+    transition: all 1s ease;
+    animation: move-img 2s ease;
+}
+.banner-img::after{
+    position: absolute;
+    content: ' ';
+    width: 500px;
+    height: 500px;
+    background: url(../images/Home-layout-1/section-2-hero/Gradient.png);
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+@keyframes move-img{
+    0%{
+        transform: translateX(90%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+.wave{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    z-index: -1;
+}
+.background{
+    position: relative;
+    z-index: 1;
+}
+.background > .left-img{
+   position: absolute;
+   top: -20px;
+   left: -2%;
+}
+@keyframes g-scale{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.hero .title{
+  animation: move-title 2s ease;
+  text-align: left;
+}
+@keyframes move-title{
+    0%{
+        transform: translateX(-90%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}   
+
+
+/* ===== section-2 menu ===== */
+.menu, .menu-3{
+    position: relative;
+    overflow: hidden;
+}
+.relive-circle, .relive-doted, .relive-triangle, .half-circle, .img-back{
+    position: absolute;
+}
+.relive-circle{
+    bottom: 30%;
+    left: 8%;
+}
+.relive-doted{
+    top: 5%;
+    left: 40%;
+}
+.relive-triangle{
+    right: 5%;
+    top: 30%;
+}
+.half-circle{
+    bottom: 0%;
+    right: 5%;
+}
+.img-back{
+    z-index: -1;
+    width: 400px;
+    height: 400px;
+    left: 12%;
+    top: 6%;
+}
+.menu:hover .img-back, .menu-3:hover .img-back{
+    animation: g-scale 1.5s ease;
+}
+.menu-img{
+    width: 450px;
+    height: 550px;
+    margin-left: 50px;
+    z-index: 1;
+}
+.menu-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.menu-text p, .favourites p{
+    margin-top: 10px;
+    font-family: var(--sec-font);
+    margin-left: 10px;
+    font-size: 18px;
+}
+.menu-text .btn{
+    width: 250px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.menu-text .btn::before, .menu-text .btn::after, .menu-2-text .btn::before, .menu-2-text .btn::after{
+    width: 170px;
+}
+.menu .title, .menu-2 .title h2, .menu-3 .title h2{
+    transform: translateX(90%);
+    opacity: 0;
+    transition: all 1s ease;
+    text-align: left;
+}
+.menu:hover .title, .menu-2:hover .title h2, .menu-3:hover .title h2{
+    transform: translateX(0%);
+    opacity: 1;
+}
+.menu-img, .menu-2-img{
+    transform: translateY(90%);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.menu:hover .menu-img, .menu-2:hover .menu-2-img, .menu-3:hover .menu-img{
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+/* section-4-favourites */
+
+.favourites, .best-sellar, .catagories, .review, .sign-in, .follow-us, .catagories-3{
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    overflow: hidden;
+}
+.favourites::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/gradient/Gradient\ \(2\).png);
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+}
+.item{
+    width: 100%;
+    height: 420px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+    z-index: 1;
+    transform: translateY(90%);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.favourites:hover .item, .best-sellar:hover .item, .popular:hover .popular-item, .best:hover .popular-item, .flavours-3:hover .flavours-item, .popular-3:hover .flavours-item, .review-3:hover .review-item{
+    transform: translateY(0%);
+    opacity: 1;
+}
+.item:hover{
+    box-shadow: 0px 0px 15px var(--secondary-color);
+    transition: box-shadow 0.3s ease;
+}
+.item .item-img{
+    width: 100%;
+    height: 220px;
+    border-radius: 30px;
+    padding-top: 15px;
+    position: relative;
+}
+.item-img img{
+    width: 200px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 30px;
+    margin: 5px 40px;
+    transition: all 0.5s ease;
+}
+.item:hover .item-img img{
+    transform: scale(1.1);
+}
+.item-img a{
+    display: block;
+    position: absolute;
+    padding: 10px 15px;
+    background-color: white;
+    top: 5%;
+    left: 5%;
+    border-radius: 50%;
+    color: #000;
+}
+.item-content{
+    margin-top: 10px;
+    position: relative;
+    padding: 5px;
+}
+.item-content .rating{
+    display: flex;
+    gap: 5px;
+}
+.item-content h3{
+    font-family: var(--sec-font);
+    font-size: 23px;
+    font-weight: 600;
+}
+.item-content .rating{
+    font-family: var(--sec-font);
+    font-weight: 600;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.rating img{
+    width: 13px;
+    height: 13px;
+    object-fit: cover;
+}
+.rating span{
+    font-size: 16px;
+}
+.item-content p{
+    text-align: left;
+    margin: 0;
+    margin-top: 15px;
+}
+.price span{
+    display: inline-block;
+    margin-top: 20px;
+    font-family: var(--sec-font);
+    font-size: 25px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.item-content i{
+    padding: 15px;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    text-align: center;
+}
+.brownie{
+    background-color: #F7F2F7;
+}
+.strawberry{
+    background-color: #FFEEEE;
+}
+.mint-choco{
+    background-color: #F6F9E1;
+}
+.vanilla{
+    background-color: #FFFAF4;
+}
+.strawberry > img{
+    width: 180px;
+    height: 190px;
+    margin-left: 50px;
+    margin-top: 0px;
+}
+.mint-choco img{
+    width: 140px;
+    height: 180px;
+    margin: 5px auto;
+}
+.vanilla img{
+    width: 100px;
+    height: 190px;
+    margin: 0px auto;
+}
+.favourite-left, .favourite-right{
+    position: absolute;
+    z-index: -1;
+}
+.favourite-left{
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 300px;
+}
+.favourite-right{
+    bottom: 0;
+    right: 0;
+    width: 110px;
+    height: 300px;
+}
+.favourites .title, .best-sellar .title, .catagories .title, .offer .title, .review .title, .sign-in .title, .follow-us .title, .popular .title, .offer-2 .title, .best .title, .review-2 .title, .sign-in-2 .title, .flavours-3 .title, .catagories-3 .title, .popular-3 .title, .review-3 .title, .questions .title, .members .title{
+    transform: translateY(-140%);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.favourites:hover .title, .best-sellar:hover .title, .catagories:hover .title, .offer:hover .title, .review:hover .title, .sign-in:hover .title, .follow-us:hover .title, .popular:hover .title, .offer-2:hover .title, .best:hover .title, .review-2:hover .title, .sign-in-2:hover .title, .flavours-3:hover .title, .catagories-3:hover .title, .popular-3:hover .title, .review-3:hover .title, .questions:hover .title, .members:hover .title{
+    transform: translateY(0%);
+    opacity: 1;
+}
+.item-s{
+    transition-delay: 0.2s;
+}
+.item-m{
+    transition-delay: 0.4s;
+}
+.item-v{
+    transition-delay: 0.6s;
 }
