@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+@media (min-width: 1400px){
+    .container{
+        max-width: 1320px;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1399px){
+    .container{
+        max-width: 1140px;
+    }
+    .info-side li a span{
+        font-size: 16px;
+    }
+    .btn{
+        font-size: 14px;
+        padding: 15px 25px;
+    }
+    nav{
+        height: 60px;
+    }
+    .icons{
+        gap: 25px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .container{
+        max-width: 960px;
+    }
+    .info-side li a span{
+        font-size: 12px;
+    }
+    .social-side li span{
+        font-size: 12px;
+    }
+    .btn{
+        font-size: 11px;
+        padding: 12px 20px;
+    }
+    .nav-list{
+        font-size: 14px;
+    }
+    .nav-list > li > a{
+        padding: 20px 0px;
+    }
+    .logo{
+        width: 180px;
+        height: 60px;
+    }
+    .icons{
+        gap: 20px;
+    }
+    .icons a{
+        font-size: 18px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .container{
+        max-width: 720px;
+    }
+    .info-side li a span{
+        font-size: 9px;
+    }
+    .info-side li a i{
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .social-side li span{
+        font-size: 9px;
+    }
+    .social-side li a i{
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .info-side, .social-side{
+        gap: 10px;
+    }
+    .btn{
+        font-size: 7px;
+        padding: 10px 12px;
+    }
+    .nav-list{
+        font-size: 9px;
+    }
+    .nav-list > li > a{
+        padding: 15px 0px;
+    }
+    .logo{
+        width: 150px;
+        height: 50px;
+    }
+    .icons{
+        gap: 15px;
+    }
+    .icons a{
+        font-size: 15px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+    .container{
+        max-width: 540px;
+    }
+    .info-side li a span{
+        font-size: 10px;
+    }
+    .info-side li a i{
+        width: 15px;
+        height: 15px;
+        font-size: 8px;
+        line-height: 15px;
+    }
+    .social-side li span{
+        font-size: 10px;
+    }
+    .social-side li a i{
+        width: 15px;
+        height: 15px;
+        font-size: 8px;
+        line-height: 15px;
+    }
+    .info-side, .social-side{
+        gap:5px;
+    }
+    .top-bar{
+        min-height: 2px;
+        padding: 0px;
+        padding-bottom: 7px;
+    }
+    .btn{
+        font-size: 5px;
+        padding: 10px 5px;
+    }
+    .btn i{
+        margin-left: 0px;
+    }
+    .nav-list{
+        font-size: 9px;
+        gap: 10px;
+    }
+    .nav-list > li > a{
+        padding: 15px 0px;
+    }
+    .logo{
+        width: 120px;
+        height: 35px;
+    }
+    .nav-list li a i{
+        margin-left: 0px;
+    }
+    .icons{
+        gap: 10px;
+    }
+    .icons a{
+        font-size: 13px;
+    }
+}
+@media (max-width: 575px){
+    .container{
+        max-width: 100%;
+    }
+    .info-side li a span{
+        font-size: 6px;
+    }
+    .info-side li a i{
+        width: 10px;
+        height: 10px;
+        font-size: 6px;
+        line-height: 10px;
+    }
+    .social-side li span{
+        font-size: 6px;
+    }
+    .social-side li a i{
+        width: 10px;
+        height: 10px;
+        font-size: 6px;
+        line-height: 10px;
+    }
+    .info-side, .social-side{
+        gap:5px;
+    }
+    .top-bar{
+        min-height: 2px;
+        padding: 0px;
+        padding-bottom: 5px;
+    }
+    .btn{
+        font-size: 5px;
+        padding: 10px 5px;
+    }
+    .btn i{
+        margin-left: 0px;
+    }
+    .nav-list{
+        font-size: 4px;
+        gap: 4px;
+    }
+    .nav-list > li > a{
+        padding: 15px 0px;
+    }
+    .logo{
+        width: 80px;
+        height: 15px;
+    }
+    .nav-list li a i{
+        margin-left: 0px;
+    }
+    .icons{
+        gap: 5px;
+    }
+    .icons a{
+        font-size: 8px;
+    }
+    
+}
