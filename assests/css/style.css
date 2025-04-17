@@ -980,3 +980,120 @@ nav{
 .best-sellar .item:hover{
     box-shadow: 0px 0px 15px var(--primary-color);
 }
+
+/* section-8-review */
+.review{
+    background: url(../images/gradient/Gradient.png);
+    background-size: cover;
+    background-position: center;
+}
+.review-content{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 550;
+    line-height: 1.5;
+    position: relative;
+}
+.review-content::before{
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 205px;
+    background: url(../images/Home-layout-1/section-8-review/Figure\ →\ testimonial-quoteimage.png.png);
+    background-size: cover;
+    background-position: center;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.name{
+    margin-top: 50px;
+}
+.name h4{
+    font-size: 25px;
+    color: var(--primary-color);
+    font-family: var(--sec-font);
+}
+.stars{
+    display: flex;
+    gap: 5px;
+    margin: 10px auto;
+}
+.face-1, .face-2, .face-3, .face-4, .face-5, .face-6, .face-7, .face-8, .s-circle, .s-triangle, .p-dot, .pink-dot{
+    position: absolute;
+}
+.face-1{
+    top: 30%;
+    left: 10%;
+    width: 106px;
+    height: 110px;
+    object-fit: cover;
+    opacity: 1;
+}
+.face-2{
+    top: 45%;
+    left: 20%;
+    width: 92px;
+    height: 91px;
+    object-fit: cover;
+    opacity: 1;
+}
+.face-3{
+    top: 60%;
+    left: 6%;
+    width: 88px;
+    height: 97px;
+    object-fit: cover;
+    opacity: 1;
+}
+.face-4{
+    top: 70%;
+    left: 23%;
+    width: 109px;
+    height: 100px;
+    object-fit: cover;
+    opacity: 1;
+}
+.face-5{
+    top: 25%;
+    right: 12%;
+    width: 102px;
+    height: 107px;
+    object-fit: cover;
+    opacity: 1;
+}
+.face-6{
+    top: 43%;
+    right: 20%;
+    width: 105px;
+    height: 104px;
+    object-fit: cover;
+    opacity: 1;
+}
+.face-7{
+    top: 55%;
+    right: 10%;
+    width: 83px;
+    height: 77px;
+    object-fit: cover;
+    opacity: 1;
+}
+.face-8{
+    top: 75%;
+    right: 25%;
+    width: 88px;
+    height: 97px;
+    object-fit: cover;
+    opacity: 1;
+}
+.review-content p, .review-content-2{
+    transform: scale(0.5);
+    opacity: 0;
+    transition: all 1s ease;
+}
+.review:hover .review-content p, .review-2:hover .review-content-2{
+    transform: scale(1);
+    opacity: 1;
+}
