@@ -145,6 +145,23 @@
         transform: translateY(0%);
         opacity: 1;
     }
+    .brownie img{
+        width: 180px;
+        height: 160px;
+        object-fit: cover;
+        margin-top: 20px;
+    }
+    .strawberry > img{
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        margin-top: 10px;
+    }
+    .mint-choco img{
+        width: 130px;
+        height: 170px;
+        margin: 10px auto 0px auto;
+    }
 }
 @media (min-width: 992px) and (max-width: 1199px){
     .container{
@@ -269,6 +286,28 @@
     }
     .menu-text .btn{
         width: 220px;
+    }
+    /* favourites */
+    .item{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    .favourites .title, .best-sellar .title, .catagories .title, .offer .title, .review .title, .sign-in .title, .follow-us .title, .popular .title, .offer-2 .title, .best .title, .review-2 .title, .sign-in-2 .title, .flavours-3 .title, .catagories-3 .title, .popular-3 .title, .review-3 .title, .questions .title, .members .title{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    /*  ============ offer ============= */
+    .offer .title h2{
+        font-size: 60px;
+    }
+    .offer p{
+        font-size: 20px;
+    }
+    .offer .btn{
+        font-size: 10px;
+    }
+    .get span{
+        font-size: 12px;
     }
 }
 @media (min-width: 768px) and (max-width: 991px){
@@ -428,6 +467,57 @@
     }
     .menu-text .btn span{
         font-size: 12px;
+    }
+    /* ==================== favourites ================= */
+    .item{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    .favourites .title, .best-sellar .title, .catagories .title, .offer .title, .review .title, .sign-in .title, .follow-us .title, .popular .title, .offer-2 .title, .best .title, .review-2 .title, .sign-in-2 .title, .flavours-3 .title, .catagories-3 .title, .popular-3 .title, .review-3 .title, .questions .title, .members .title{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    .favourites .title h2, .favourites .title span, .catagories .title h2, .catagories .title span, .best-sellar .title h2, .best-sellar .title span{
+        font-size: 50px;
+    }
+    .favourite-right{
+        width: 80px;
+        height: 240px;
+    }
+    /* ================== catagories ================== */
+    .catagories .title p{
+        font-size: 14px;
+    }
+    /*  ============ offer ============= */
+    .offer .title h2{
+        font-size: 50px;
+        margin-left: 50px;
+    }
+    .offer p{
+        font-size: 15px;
+        margin-left: 50px;
+    }
+    .offer .btn{
+        font-size: 8px;
+        margin-left: 50px;
+    }
+    .get span{
+        font-size: 10px;
+    }
+    .r-img{
+        width: 160px;
+        height: 250px;
+    }
+    .offer-dis{
+        width: 100px;
+        height: 100px;
+    }
+    .dot-arrow{
+        width: 200px;
+    }
+    /*  bestsellar */
+    .title p{
+        font-size: 14px;
     }
 }
 @media (min-width: 576px) and (max-width: 767px){
@@ -625,6 +715,105 @@
     .menu-text .btn i{
         font-size: 10px;
         margin-left: 3px;
+    }
+    /* ===================== favourites ================= */
+    .favourites, .best-sellar, .catagories, .offer, .review, .sign-in, .follow-us, .catagories-3{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .item{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    .favourites .title, .best-sellar .title, .catagories .title, .offer .title, .review .title, .sign-in .title, .follow-us .title, .popular .title, .offer-2 .title, .best .title, .review-2 .title, .sign-in-2 .title, .flavours-3 .title, .catagories-3 .title, .popular-3 .title, .review-3 .title, .questions .title, .members .title{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    .favourites .title h2, .favourites .title span, .catagories .title h2, .catagories .title span, .best-sellar .title h2, .best-sellar .title span{
+        font-size: 36px;
+    }
+    .favourites .title p, .catagories .title p, .best-sellar .title p{
+        font-size: 14px;
+    }
+    .brownie img{
+        width: 160px;
+        height: 140px;
+        object-fit: cover;
+        margin-top: 30px;
+    }
+    .strawberry > img{
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        margin-top: 20px;
+    }
+    .mint-choco img{
+        width: 130px;
+        height: 170px;
+        margin: 10px auto 0px auto;
+    }
+    .favourite-right{
+        width: 60px;
+        height: 200px;
+    }
+    .favourite-left{
+        width: 160px;
+        height: 260px;
+    }
+    /* ================== catagories ================== */
+    .catagories .catagory-item{
+        height: 300px;
+    }
+    .catagory-content p{
+        font-size: 16px;
+    }
+    /*  ============ offer ============= */
+    .offer .title h2{
+        font-size: 40px;
+        margin-left: 0px;
+    }
+    .offer p{
+        font-size: 12px;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .offer .btn{
+        width: 95px;
+        font-size: 8px;
+        margin-left: 0px;
+    }
+    .offer .get{
+        margin-top: 20px;
+        gap: 10px;
+    }
+    .get span{
+        font-size: 8px;
+    }
+    .r-img{
+        width: 160px;
+        height: 250px;
+    }
+    .offer-dis{
+        width: 80px;
+        height: 80px;
+        top: 27%;
+    }
+    .dot-arrow{
+        width: 150px;
+    }
+    .s-dotted{
+        width: 60px;
+    }
+    .m-triangle{
+        width: 40px;
+        height: 45px;
+    }
+    /* ========= best sellar =========== */
+    .best-sellar .item-content h3, .best-sellar .item-content .price span{
+        font-size: 20px;
+    }
+    .best-sellar .item-content p{
+        font-size: 16px;
     }
 }
 @media (max-width: 575px){
@@ -835,5 +1024,159 @@
     .menu-text .btn i{
         font-size: 8px;
         margin-left: 2px;
+    }
+    /* ===================== favourites ================= */
+    .favourites, .best-sellar, .catagories, .review, .sign-in, .follow-us, .catagories-3{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .item{
+        transform: translateY(0%);
+        opacity: 1;
+        height: auto;
+    }
+    .favourites .title, .best-sellar .title, .catagories .title, .offer .title, .review .title, .sign-in .title, .follow-us .title, .popular .title, .offer-2 .title, .best .title, .review-2 .title, .sign-in-2 .title, .flavours-3 .title, .catagories-3 .title, .popular-3 .title, .review-3 .title, .questions .title, .members .title{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    .favourites .title h2, .favourites .title span, .catagories .title h2, .catagories .title span, .best-sellar .title h2, .best-sellar .title span{   
+        font-size: 25px;
+        text-shadow: none;
+    }
+    .favourites .title p, .catagories .title p, .best-sellar .title p{
+        font-size: 8px;
+    }
+    .brownie img, .s-sundae img{
+        width: 160px;
+        height: 150px;
+        object-fit: cover;
+        margin-top: 5px;
+    }
+    .strawberry > img, .peach img{
+        width: 130px;
+        height: 135px;
+        object-fit: cover;
+        margin-top: 13px;
+    }
+    .mint-choco img{
+        width: 110px;
+        height: 140px;
+        margin: 10px auto 0px auto;
+    }
+    .vanilla img, .choco-chip-cookie img{
+        width: 80px;
+        height: 160px;
+    }
+    .favourite-right{
+       display: none;
+    }
+    .favourite-left{
+        width: 90px;
+        height: 140px;
+    }
+    .item .item-img{
+        height: 180px;
+    }
+    .item-content h3{
+        font-size: 18px;
+    }
+    .rating span{
+        font-size: 14px;
+    }
+    .rating img{
+        width: 10px;
+        height: 10px;
+        object-fit: cover;
+    }
+    .item-content p{
+        font-size: 14px;
+        margin-top: 8px;
+    }
+    .price span{
+        font-size: 18px;
+        margin-top: 10px;   
+    }
+    .item-content i{
+        padding: 8px;
+        font-size: 16px;
+        bottom: -2px;
+    }
+    /* ================== catagories ================== */
+    .catagories .catagory-item{
+        height: 150px;
+    }
+    .catagory-content p{
+        font-size: 8px;
+    }
+    .catagory-content{
+        height: 7px;
+        padding: 13px;
+    }
+    .catagory-content i{
+        padding: 5px;
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+    /*  ============ offer ============= */
+    .offer{
+        padding: 20px;
+    }
+    .offer .title h2{
+        font-size: 40px;
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+    .offer p{
+        font-size: 12px;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .offer .btn{
+        width: 95px;
+        font-size: 8px;
+        margin-left: 0px;
+    }
+    .offer .get{
+        margin-top: 20px;
+        gap: 10px;
+    }
+    .get span{
+        font-size: 10px;
+    }
+    .btn span{
+        font-size: 7px;
+        margin-right: 5px;
+        margin-left: 10px;
+    }
+    .r-img{
+        display: none;
+        width: 160px;
+        height: 250px;
+    }
+    .offer-dis{
+        width: 50px;
+        height: 50px;
+        top: 27%;
+        left: 60%;
+    }
+    .dot-arrow{
+        width: 100px;
+        left: 66%;
+        top: 16%;
+    }
+    .s-dotted{
+        display: none;
+        width: 60px;
+    }
+    .m-triangle{
+        display: none;
+        width: 40px;
+        height: 45px;
+    }
+    /*  best sellar */
+    .rocky-road img{
+        width: 96px;
+        height: 153px;
+        margin: 1px auto;
     }
 }

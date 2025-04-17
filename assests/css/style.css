@@ -104,6 +104,9 @@ h1, h2, h3, h4, h5, h6{
     padding-left: var(--gw);
     padding-right: var(--gw);
 } 
+.row-gap{
+    row-gap: 20px;
+}
 .items-center{
     align-items: center;
 }
@@ -675,7 +678,8 @@ nav{
     height: 180px;
     object-fit: cover;
     border-radius: 30px;
-    margin: 5px 40px;
+    margin-left: auto;
+    margin-right: auto;
     transition: all 0.5s ease;
 }
 .item:hover .item-img img{
@@ -755,10 +759,14 @@ nav{
 .vanilla{
     background-color: #FFFAF4;
 }
+.brownie{
+    margin: auto;
+}
 .strawberry > img{
     width: 180px;
     height: 190px;
-    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0px;
 }
 .mint-choco img{
@@ -804,4 +812,171 @@ nav{
 }
 .item-v{
     transition-delay: 0.6s;
+}
+
+/* section-5-catagories */
+.catagories .catagory-item, .catagories-3 .catagory-item{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    border-radius: 20px;
+    background-position: center;
+    background-color: #683292;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+.sundaes{
+    position: relative;
+    background: url(../images/Home-layout-1/section-5-catagories/categories-image1.jpg.png);
+    background-size: cover;
+}
+.catagory-item:hover{
+    transform: scale(1.05);
+}
+.cones{
+    position: relative;
+    background: url(../images/Home-layout-1/section-5-catagories/Figure.png);
+    background-size: cover;
+}
+.milkshake{
+    position: relative;
+    background: url(../images/Home-layout-1/section-5-catagories/Figure\ \(1\).png);
+    background-size: cover;
+}
+.seasonal{
+    position: relative;
+    background: url(../images/Home-layout-1/section-5-catagories/Figure\ \(2\).png);
+    background-size: cover;
+}
+.catagory-content{
+    position: absolute;
+    width: 93%;
+    background-color: white;
+    border-radius: 20px;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    padding: 15px;
+}
+.catagory-content p{
+    font-weight: 600;
+    line-height: 10px;
+}
+.catagory-content i{
+    padding: 10px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    color: white;
+}
+
+/* section-6-offer */
+.offer{
+    width: 100%;
+    min-height: 200px;
+    background-color: var(--secondary-color);
+    padding: 100px;
+    position: relative;
+    overflow: hidden;
+}
+.offer .title h2{
+    color: white;
+    margin-left: 120px;
+    margin-top: 50px;
+}
+.offer p{
+    margin-left: 120px;
+    margin-top: 30px;
+    font-size: 27px;
+    color: white;
+}
+.offer .get{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+.get span{
+    color: white;
+}
+.offer .btn{
+    width: 200px;
+    margin-left: 120px;
+}
+.offer .btn:hover{
+    box-shadow: 0px 0px 15px var(--primary-color);
+}
+.offer .btn::before, .offer .btn::after{
+    display: none;
+}
+.m-triangle, .s-dotted, .offer-dis, .dot-arrow, .r-img{
+    position: absolute;
+}
+.offer-dis{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    top: 30%;
+    left: 50%;
+}
+.dot-arrow{
+    top: 17%;
+    left: 54%;
+}
+.s-dotted{
+    left: 3%;
+    top: 70%;
+}
+.m-triangle{
+    top: 40%;
+    left: 7%;
+}
+.r-img{
+    right: 0;
+    bottom: 10%;
+}
+.offer .title{
+    text-align: left;
+}
+
+/* section-7-best sellar */
+.best-sellar .item{
+    height: auto;
+}
+.choco-chip-cookie{
+    background-color: #FFF3EA;
+}
+.rocky-road{
+    background-color: #F8EBE4;
+}
+.peach{
+    background-color: #FFEFD8;
+}
+.s-sundae{
+    background-color: #FFEFF0;
+}
+.choco-chip-cookie img{
+    width: 97px;
+    height: 191px;
+    margin: 1px auto;
+}
+.rocky-road img{
+    width: 119px;
+    height: 193px;
+    margin: 1px auto;
+}
+.peach img{
+    width: 160px;
+    height: 173px;
+    margin: 1px auto;
+}
+.s-sundae img{
+    width: 171px;
+    height: 174px;
+    margin: 1px auto;
+}
+.best-sellar .item{
+    background-color: rgb(255, 255, 243);
+}
+.best-sellar .item:hover{
+    box-shadow: 0px 0px 15px var(--primary-color);
 }
