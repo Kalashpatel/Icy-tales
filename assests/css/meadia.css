@@ -206,6 +206,18 @@
         width: 78px;
         height: 87px;
     }
+    /* ========== follow us =========*/
+    .f-img::before, .f-img::after{
+        display: none;
+    }
+    .p-dot{
+        bottom: 8%;
+        right: 8%;
+    }
+    .pink-dot{
+        top: 35%;
+        left: 8%;
+    }
 }
 @media (min-width: 992px) and (max-width: 1199px){
     .container{
@@ -402,6 +414,51 @@
     }
     .name h4{
         font-size: 20px;
+    }
+    /* ========== sign in =========== */
+    .sign-in .title h2, .sign-in .title span, .follow-us .title h2, .follow-us .title span{
+        font-size: 50px;
+    }
+    .sign-in .title p, .form label, .follow-us .title p{
+        font-size: 16px;
+    }
+    .sign-in .title{
+        margin-bottom: 25px;
+    }
+    .input .email{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    .sign-in .btn, .sign-in-2 .btn{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    .sign-in .btn{
+        width: 170px;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .input{
+        margin-bottom: 30px;
+    }
+    .s-triangle{
+        right: 10%;
+    }
+    /* ========= follow us ========== */
+    .f-img::before, .f-img::after{
+        display: none;
+    }
+    .p-dot{
+        width: 100px;
+        height: 100px;
+        bottom: 10%;
+        right: 6%;
+    }
+    .pink-dot{
+        width: 100px;
+        height: 100px;
+        top: 40%;
+        left: 6%;
     }
 }
 @media (min-width: 768px) and (max-width: 991px){
@@ -666,6 +723,55 @@
     .name p{
         font-size: 12px;
     }
+    /* ========== sign in =========== */
+    .sign-in .title h2, .sign-in .title span, .follow-us .title h2, .follow-us .title span{
+        font-size: 45px;
+    }
+    .sign-in .title p, .form label, .follow-us .title p{
+        font-size: 14px;
+    }
+    .sign-in .title{
+        margin-bottom: 20px;
+    }
+    .input .email{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    .sign-in .btn, .sign-in-2 .btn{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    .sign-in .btn{
+        width: 180px;
+        font-size: 12px;
+        line-height: 30px;
+    }
+    .input{
+        margin-bottom: 20px;
+    }
+    .s-triangle{
+        right: 8%;
+    }
+    .input input::placeholder{
+        font-size: 16px;
+    }
+    /* ========= follow us ========== */
+    .f-img::before, .f-img::after{
+        display: none;
+    }
+    .p-dot{
+        width: 80px;
+        height: 80px;
+        bottom: 15%;
+        right: 6%;
+    }
+    .pink-dot{
+        width: 80px;
+        height: 80px;
+        top: 45%;
+        left: 6%;
+    }
+    
 }
 @media (min-width: 576px) and (max-width: 767px){
     .container{
@@ -1018,6 +1124,52 @@
     .review-content::before{
         width: 180px;
         height: 165px;
+    }
+    /* ========== sign in =========== */
+    .sign-in .title h2, .sign-in .title span{
+        font-size: 35px;
+        text-shadow: none;
+    }
+    .sign-in .title p, .form label{
+        font-size: 12px;
+    }
+    .sign-in .title{
+        margin-bottom: 15px;
+    }
+    .input{
+        flex-direction: column;
+    }
+    .input .email{
+        transform: translateX(0%);
+        opacity: 1;
+        width: auto;
+    }
+    .sign-in .btn, .sign-in-2 .btn{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    .sign-in .btn{
+        width: 120px;
+        font-size: 12px;
+        line-height: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 7px 5px;
+    }
+    .input{
+        margin-bottom: 15px;
+    }
+    .s-triangle{
+        right: 8%;
+        width: 40px;
+        height: 40px;
+    }
+    .s-circle{
+        width: 50px;
+        height: 50px;
+    }
+    .input input::placeholder{
+        font-size: 14px;
     }
 }
 @media (max-width: 575px){
@@ -1450,5 +1602,52 @@
     .review-content::before{
         width: 100px;
         height: 95px;
+    }
+    /* ========== sign in =========== */
+    .sign-in .title h2, .sign-in .title span{
+        font-size: 25px;
+        text-shadow: none;
+    }
+    .sign-in .title p, .form label{
+        font-size: 10px;
+    }
+    .sign-in .title{
+        margin-bottom: 10px;
+    }
+    .input{
+        flex-direction: column;
+    }
+    .input .email{
+        transform: translateX(0%);
+        opacity: 1;
+        width: auto;
+        height: 30px;
+    }
+    .sign-in .btn, .sign-in-2 .btn{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    .sign-in .btn{
+        width: 80px;
+        font-size: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5px 5px;
+    }
+    .input{
+        margin-bottom: 10px;
+    }
+    .s-triangle{
+        right: 8%;
+        width: 25px;
+        height: 25px;
+    }
+    .s-circle{
+        width: 35px;
+        height: 35px;
+        left: 5%;
+    }
+    .input input::placeholder{
+        font-size: 10px;
     }
 }
