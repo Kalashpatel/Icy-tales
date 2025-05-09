@@ -253,7 +253,9 @@ nav{
     top: 0;
     position: relative;
     padding-top: 5px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    margin-left: auto;
+    margin-right: auto;
 }
 .z-index{
     z-index: 1000;

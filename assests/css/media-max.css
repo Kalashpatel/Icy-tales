@@ -168,6 +168,7 @@
     .popular-img{
         margin-left: auto;
         margin-right: auto;
+        width: auto;
     }
     /* menu */
     .menu-2-text p {
@@ -188,6 +189,11 @@
     .right-img-o{
         width: 400px;
         height: 450px;
+    }
+    /* review */
+    .review-faces{
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 @media (max-width: 991px){
@@ -234,7 +240,7 @@
         display: none;
     }
     .title h2, .title span{
-        font-size: 42px;
+        font-size: 52px;
     }
     .title p{
         font-size: 16px;
@@ -257,6 +263,9 @@
         font-size: 20px;
     }
     /* menu */
+    .menu-2-text .title h2, .menu-2-text .title span{
+        font-size: 42px;
+    }
     .menu-2-img{
         margin: 0px;
     }
@@ -281,6 +290,11 @@
     .right-img-o{
         width: 350px;
         height: 400px;
+    }
+    /* sign in */
+    .sign-in-2 .btn{
+        width: 150px;
+        line-height: 25px;
     }
 }
 @media (max-width: 767px){
@@ -397,6 +411,17 @@
         margin-left: auto;
         margin-right: auto;
     }
+    /* sign in */
+    .sign-in-2 .btn{
+        width: 150px;
+        line-height: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sign-in-2 .btn span{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 @media (max-width: 575px){
     .container{
@@ -469,7 +494,7 @@
         width: 100px;
     }
     /* hero */
-    .hero-2, .popular, .menu-2, .options, .offer-2{
+    .hero-2, .popular, .menu-2, .options, .offer-2, .best, .review-2, .sign-in-2{
         padding: 40px 20px;
     }
     .hero-2 .title h2{
@@ -504,5 +529,16 @@
     }
     .menu-2-text .btn span{
         font-size: 12px;
+    }
+    /* review */
+    .review-faces{
+        gap: 10px;
+    }
+    /* sign in */
+    .sign-in-2 .btn{
+        width: 100px;
+        line-height: 25px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
